@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+} 
+section {
+    /* padding: 20px; */
+    text-align: center;
+}
+/* footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} */
+
+/* Estilos para a div conteudo */
+.conteudo {
+    background-color: #d9d9d9;
+    padding: 20px;
+    /* margin-top: 20px; */
+}
+
+/* Estilos para a div imagem */
+.imagem {
+    text-align: center;
+}
+
+/* Estilos para a div texto */
+.texto {
+    background-color: #E2E2E2;
+    padding: 10px 30px; /* Reduz o espaçamento interno vertical */
+    margin-top: 10px; /* Reduz o espaçamento entre o texto e a caixa */
+    border-radius: 15px;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.texto p {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    text-align: left;
+    margin-left: 30px; /* Mantém a mesma margem do texto para a esquerda */
+}
+
+
+.texto button {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    border: none;
+    background-color: #EAC222;
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 30px; /* Aumenta o espaço entre o botão e a caixa */
+    margin-left: 30px; /* Mantém a mesma margem do botão para a esquerda */
+}
+
+
+
+
+/* Estilos para o título abaixo da imagem */
+.imagem h2 {
+    font-family: "Myanmar Khyay", sans-serif;
+    font-size: 56px;
+    margin-top: 10px;
+}
