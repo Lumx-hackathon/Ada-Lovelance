@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    padding: 10px 20px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img {
+    width: 100px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    display: inline;
+    margin-right: 20px;
+}
+ul li:last-child {
+    margin-right: 0;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.profile img {
+    width: 30px;
+    border-radius: 50%;
+}
+.frase_inicial{
+    font-size: 40px;
+    font-family: Inter;
+    margin-left: 670px;
+    margin-top: 100px;
+    font-weight: bold;
+}
+.favo_img img{
+    margin-left: 160px;
+    margin-top: -230px;
+    width: 400px;
+}
+.fundo_preto {
+    background-color: #303030;
+    height: 740px;
+    margin-top: -30px;
+}
+
+.fundo_preto2 {
+    background-color: #303030;
+    height: 100px;
+    margin-top: -30px;
+}
+
+.quem_somos {
+    color: #fff;
+    margin-left: 180px;
+    font-size: 36px;
+    margin-top: -680px;
+}
+.quem_somos_text {
+    color: #fff;
+    margin-left: 180px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.nossa_tecnologia {
+    color: #fff;
+    margin-left: 810px;
+    font-size: 36px;
+    margin-top: 60px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.rectangle {
+    width: 300px;
+    height: 350px;
+    background-color: #EAC222;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+     color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.text {
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.text2 {
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -400px;
+    margin-right: 60px;
+}
+
+
+.fundo_branco {
+    background-color: #fff;
+    height: 720px;
+}
+
+.fundo_branco2 {
+    background-color: #fff;
+    height: 100px;
+}
+
+.container_faq {
+    width: 250px;
+    height: 50px;
+    background-color: #EAC222;
+    margin-left: -20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    margin-top: 40px;
+    font-weight: bold;;
+}
+
+.text_faq {
+    margin-top: 6px;
+    font-size: 36px;
+}
+
+.perguntas {
+    font-size: 32px;
+    margin-top: -600px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropbtn {
+    background-color: #f9f9f9;
+    color: black;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid black; 
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 45px;
+    width: 1184px;
+  }
+
+  .dropbtn2 {
+    background-color: #f9f9f9;
+    color: black;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 45px;
+    width: 1184px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    margin-left: 45px;
+  }
+
+  .dropdown-content p {
+    margin: 0;
+  }
+
+  .empresa {
+    font-size: 32px;
+    margin-left: 50px;
+    margin-top: 100px;
+    font-weight: bold;
+  }
+
+  .ONG {
+    font-size: 32px;
+    margin-left: 50px;
+    margin-top: 100px;
+    font-weight: bold;
+  }
+
+  .Doador {
+    font-size: 32px;
+    margin-left: 50px;
+    margin-top: 100px;
+    font-weight: bold;
+  }

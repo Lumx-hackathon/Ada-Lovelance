@@ -1,0 +1,97 @@
+<style>
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+  
+    .dropbtn {
+      background-color: #f9f9f9;
+      color: black;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid black; /* Adiciona uma borda preta */
+      cursor: pointer;
+      margin-top: 30px;
+      margin-left: 45px;
+      width: auto; /* Remova a largura fixa */
+      text-align: left; /* Alinha o texto à esquerda */
+      padding-left: 10px; /* Adiciona um padding à esquerda */
+    }
+  
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 12px 16px;
+      z-index: 1;
+      margin-left: 45px;
+    }
+  
+    .dropdown-content p {
+      margin: 0;
+    }
+  
+    .dropdown-content h2 {
+      margin-top: 0;
+    }
+  
+    /* Ajuste do posicionamento */
+    .dropbtn span {
+      margin-right: 10px; /* Ajuste o valor conforme necessário */
+    }
+  </style>
+  
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown('dropdown4')"><span>É seguro utilizar a tecnologia blockchain?</span> &#9660;</button>
+    <div class="dropdown-content" id="dropdown4">
+      <p>Um smart contract, ou contrato inteligente, é um código de computador autoexecutável que executa e impõe os termos de um contrato de forma automática. Ele é executado em uma blockchain e pode automatizar processos, eliminar intermediários e garantir a execução transparente e segura de acordos.</p>
+      <p>Os smart contracts são usados em diversas aplicações, desde contratos financeiros até sistemas de votação e logística.</p>
+    </div>
+  </div>  
+  
+  <div class="empresa">
+    Sou uma empresa:
+  </div>
+  
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown('dropdown5')"><span>Como realizo meu cadastro na plataforma?</span> &#9660;</button>
+    <div class="dropdown-content" id="dropdown5">
+      <p>Blockchain é uma tecnologia de registro distribuído que visa a descentralização como medida de segurança. Ele é composto por blocos de informações, onde cada bloco contém um registro das transações que foram verificadas e validadas.</p>
+      <p>Essa tecnologia é fundamental para criptomoedas como o Bitcoin, pois garante que as transações sejam seguras e transparentes sem a necessidade de um intermediário centralizado, como um banco.</p>
+    </div>
+  </div>
+  
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown('dropdown6')"><span>Como disponibilizo tokens de desconto na plataforma?</span> &#9660;</button>
+    <div class="dropdown-content" id="dropdown6">
+      <p>Um smart contract, ou contrato inteligente, é um código de computador autoexecutável que executa e impõe os termos de um contrato de forma automática. Ele é executado em uma blockchain e pode automatizar processos, eliminar intermediários e garantir a execução transparente e segura de acordos.</p>
+      <p>Os smart contracts são usados em diversas aplicações, desde contratos financeiros até sistemas de votação e logística.</p>
+    </div>
+  </div>      
+  
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown('dropdown7')"><span>Quais tipos de token são aceitos na plataforma?</span> &#9660;</button>
+    <div class="dropdown-content" id="dropdown7">
+      <p>Um smart contract, ou contrato inteligente, é um código de computador autoexecutável que executa e impõe os termos de um contrato de forma automática. Ele é executado em uma blockchain e pode automatizar processos, eliminar intermediários e garantir a execução transparente e segura de acordos.</p>
+      <p>Os smart contracts são usados em diversas aplicações, desde contratos financeiros até sistemas de votação e logística.</p>
+    </div>
+  </div> 
+  
+  <script>
+    function toggleDropdown(dropdownId) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      for (var i = 0; i < dropdowns.length; i++) {
+        if (dropdowns[i].id !== dropdownId) {
+          dropdowns[i].style.display = "none";
+        }
+      }
+      var dropdownContent = document.getElementById(dropdownId);
+      if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
+        dropdownContent.style.display = "block";
+      } else {
+        dropdownContent.style.display = "none";
+      }
+    }
+  </script>  
