@@ -115,6 +115,10 @@ ul li a {
     margin-right: 20px;
     align-items: center;
     padding: 40px;
+    display: flex;
+    flex-direction: column; /* Adiciona uma coluna flexível */
+    /* justify-content: center; Centraliza verticalmente */
+    text-align: center; /* Centraliza horizontalmente */
   }
   
   .gray-box:last-child {
@@ -136,9 +140,10 @@ ul li a {
     font-size: 14px;
     color: #000000;
     margin-bottom: 10px;
+    text-align: left;
   }
   
-  .gray-box input[type="text"] {
+  /* .gray-box input[type="text"] {
     font-family: "Inter", sans-serif;
     font-weight: lighter;
     font-size: 14px;
@@ -146,8 +151,24 @@ ul li a {
     width: 100%;
     padding: 5px;
     margin-bottom: 10px;
+  } */
+
+  .gray-box input[type="text"] {
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #000000;
+    /* position: fixed; */
+    width: 300px; /* Adjusted width */
+    padding: 15px;
+    margin-bottom: 16px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    /* left: 400px; */
+    /* bottom: 100px; */
   }
-  
   .gray-box button {
     font-family: "Inter", sans-serif;
     font-weight: 600;
@@ -160,8 +181,9 @@ ul li a {
     cursor: pointer;
     margin-top: 10px;
     margin-bottom: 30px; /* Aumenta o espaço entre o botão e a caixa */
-    margin-right: 30px; /* Mantém a mesma margem do botão para a esquerda */
   }
+  
+  
   
   .gray-box img {
     display: none;
