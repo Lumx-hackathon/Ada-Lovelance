@@ -60,10 +60,6 @@ ul li a {
     padding: 0 50px; /* Adicionando padding para criar espaço entre as palavras */
 }
 
-.profile img {
-    width: 30px; /* Ajuste conforme necessário */
-    border-radius: 50%; /* Para criar uma imagem circular */
-}
 section {
     /* padding: 20px; */
     text-align: center;
@@ -201,6 +197,7 @@ section {
     color: #898CA9;
     font-size: 26px;
     margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .tres-blocos {
@@ -269,6 +266,11 @@ section {
     text-align: center; /* Centralizando o texto */
 }
 
+.container {
+    background-color: #b9b6b6;
+    padding: 20px;
+    padding-bottom: 100px;
+} 
 .tres-containers {
     display: flex;
     margin-top: 100px;

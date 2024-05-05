@@ -1,42 +1,68 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
 }
+
 header {
     background-color: #333;
     padding: 10px 20px;
 }
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 50px;
 }
+
 .logo img {
-    width: 100px;
+    width: 60px; /* Ajuste conforme necessário */
 }
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 ul li {
     display: inline;
     margin-right: 20px;
 }
-ul li:last-child {
-    margin-right: 0;
-}
+
 a {
     text-decoration: none;
     color: #fff;
 }
+
+.home-a{
+    color:#000000;
+}
+
+.home{
+    background-color: #EAC222; /* Cor de fundo amarela */
+    padding: 12px 0px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
 .profile img {
-    width: 30px;
-    border-radius: 50%;
+    width: 40px; /* Ajuste conforme necessário */
+    border-radius: 50%; /* Para criar uma imagem circular */
+}
+
+/* Adicionando espaçamento entre as palavras nos links */
+ul li a {
+    padding: 0 50px; /* Adicionando padding para criar espaço entre as palavras */
 }
 .frase_inicial{
+    font-family: "Inter", sans-serif;
+    color: #000000;
     font-size: 40px;
-    font-family: Inter;
     margin-left: 670px;
     margin-top: 100px;
     font-weight: bold;
@@ -48,74 +74,81 @@ a {
 }
 .fundo_preto {
     background-color: #303030;
-    height: 740px;
-    margin-top: -30px;
-}
-
-.fundo_preto2 {
-    background-color: #303030;
-    height: 100px;
+    height: 635px;
     margin-top: -30px;
 }
 
 .quem_somos {
     color: #fff;
     margin-left: 180px;
+    font-weight: bold;
     font-size: 36px;
-    margin-top: -680px;
+    margin-top: -605px;
 }
 .quem_somos_text {
     color: #fff;
     margin-left: 180px;
+    text-align:justify;
+    margin-right: 180px;
+    font-weight: 600px;
     margin-top: 20px;
     font-size: 25px;
 }
 .nossa_tecnologia {
     color: #fff;
-    margin-left: 810px;
+    margin-right: 180px;
+    text-align: right;
+    font-weight: bold;
     font-size: 36px;
     margin-top: 60px;
 }
-.container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
 
-.rectangle {
-    width: 300px;
-    height: 350px;
+
+.tres-containers {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-left: 80px;
+    margin-right: 80px;
+} 
+
+.container-chumbo {
+        flex: 1;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: 20px; /* Espaçamento entre os blocos */
+        margin-left: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column; /* Alinha os itens verticalmente */
     background-color: #EAC222;
-    margin-right: 10px;
-    margin-left: 10px;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-     color: rgb(0, 0, 0);
-    font-family: Inter;
-    font-size: 28px;
-    font-weight: bold;
-    margin-top: 20px;
-}
-.text {
-    color: rgb(0, 0, 0);
-    font-family: Inter;
-    font-size: 28px;
-    font-weight: bold;
-    margin-top: 20px;
-}
-.text2 {
-    color: rgb(0, 0, 0);
-    font-family: Inter;
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 80px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: -400px;
-    margin-right: 60px;
 }
 
+.texto-container h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    color: #000000;
+    text-align: center;
+}
+
+.linha-preta {
+    /* Largura total da linha */
+   height: 2px; /* largura da linha */
+   background-color: #000; /* Cor preta */
+   margin-left: 25px;
+   margin-right: 25px;
+   width: auto;
+}
+
+.texto-container p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+}
 
 .fundo_branco {
     background-color: #fff;
@@ -136,7 +169,7 @@ a {
     display: flex;
     justify-content: center;
     color: rgb(0, 0, 0);
-    font-family: Inter;
+    font-family: "Inter" sans-serif;
     margin-top: 40px;
     font-weight: bold;;
 }
@@ -167,30 +200,20 @@ a {
     cursor: pointer;
     margin-top: 30px;
     margin-left: 45px;
-    width: 1184px;
-  }
-
-  .dropbtn2 {
-    background-color: #f9f9f9;
-    color: black;
-    padding: 12px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    margin-top: 30px;
-    margin-left: 45px;
-    width: 1184px;
+    margin-right: 45px;
+    width: 1130px;;
   }
 
   .dropdown-content {
     display: none;
-    position: absolute;
+    /* position: absolute; */
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
     margin-left: 45px;
+    margin-right: 45px;
   }
 
   .dropdown-content p {

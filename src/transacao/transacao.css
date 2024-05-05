@@ -1,69 +1,65 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 header {
-    background-color: #333;
-    padding: 10px 20px;
+  background-color: #333;
+  padding: 10px 20px;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
 }
 
 .logo img {
-    width: 60px; /* Ajuste conforme necessário */
+  width: 60px; /* Ajuste conforme necessário */
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 ul li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 .home-a{
-    color:#000000;
+  color:#000000;
 }
 
 .home{
-    background-color: #EAC222; /* Cor de fundo amarela */
-    padding: 12px 0px; /* Espaçamento interno */
-    border-radius: 5px; /* Borda arredondada */
+  background-color: #EAC222; /* Cor de fundo amarela */
+  padding: 12px 0px; /* Espaçamento interno */
+  border-radius: 5px; /* Borda arredondada */
 }
 
 ul li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .profile img {
-    width: 40px; /* Ajuste conforme necessário */
-    border-radius: 50%; /* Para criar uma imagem circular */
+  width: 40px; /* Ajuste conforme necessário */
+  border-radius: 50%; /* Para criar uma imagem circular */
 }
 
 /* Adicionando espaçamento entre as palavras nos links */
 ul li a {
-    padding: 0 50px; /* Adicionando padding para criar espaço entre as palavras */
+  padding: 0 50px; /* Adicionando padding para criar espaço entre as palavras */
 }
 
-.profile img {
-    width: 30px; /* Ajuste conforme necessário */
-    border-radius: 50%; /* Para criar uma imagem circular */
-}
 
   .container {
     background-color: #EDEDED;
