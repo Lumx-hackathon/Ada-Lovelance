@@ -86,6 +86,11 @@ section {
     text-align: center;
 }
 
+.imagem-logo img {
+    height: 242px;
+    width: 240px;
+    margin-top: 10px;
+}
 /* Estilos para o título abaixo da imagem */
 .imagem-logo h2 {
     font-family: "Myanmar Khyay", sans-serif;

@@ -13,11 +13,6 @@
                 <img src="/assets/perfil/Ada_Branco.png" alt="Logo">
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li class="home"><a href="#" class="home-a">Doação</a></li>
-                <li><a href="#">Créditos</a></li>
-                <li><a href="#">Empresa</a></li>
-                <li><a href="#">FAQ</a></li>
             </ul>
             <div class="profile">
                 <img src="/assets/perfil/perfil (1) 1.png" alt="Perfil">
@@ -25,11 +20,14 @@
         </nav>
     </header>
   <div class="container">
+    <div class="voltar">
+        <img onclick="voltar()" src="/assets/doacao/icone_voltar.png" alt="Voltar" class="voltar">
+    </div>
     <div class="title">
-        Doação  para: <span class="highlight">Nome da ONG</span>
+        Doação  para: <span class="highlight">Instituto Lixo Zero Brasil</span>
     </div>
     <div class="description">
-        A empresa piriri pororó aaaaaaaaa bbbbbbbb ccccccccc dddddddddd eeeeeeeeeee ffffffffff gggggggggg hhhhhhhhhhh iiiiiiiiiiii jjjjjjjjjjjjjjjj kkkkk
+        O Instituto Lixo Zero Brasil é uma organização que busca promover a conscientização e ações práticas para reduzir a quantidade de resíduos produzidos e descartados de maneira inadequada no Brasil. Possui a visão de construir um país onde resíduos sejam tratados como recursos e não como lixo, trabalha em diversas frentes para alcançar esse objetivo.
     </div>
   </div>
 
@@ -96,5 +94,10 @@
         </div>
     </div>
 </footer>
+<script>
+    function voltar() {
+    window.location.href = "../doação/doacao.html";
+    }
+    </script>
 </body>
 </html>
