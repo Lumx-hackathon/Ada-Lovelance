@@ -160,10 +160,6 @@ nav ul li a {
     text-align: center;
     margin-left: 50px;
   }
-  
-  .tituloCarrossel {
-    margin-left: 20px;
-}
 
 .endereco_carteira{
     margin-right: -100px;
@@ -205,45 +201,60 @@ nav ul li a {
     width: 280px;
 }
 
-.tituloCarrossel {
-    margin-left: 10px;
-    margin-top: 35px;
+.valores{
+    align-items: center;
+    text-align: center;
 }
 
-.tituloCarrossel2 {
-    margin-left: 10px;
-    margin-top: 35px;
+.quantia {
+    font-size: 60px;
+    font-weight: 700;
 }
 
-.divTituloCarrossel {
-    margin-left: 50px;
+.tem {
     margin-top: 40px;
-    margin-bottom: 200px;
-    width: 200px;
-    background-color: #EAC222;
-    height: 40px;
-    border-radius: 10px;
-    display: flex; /* Adiciona display flex para alinhar o texto */
-    align-items: center; /* Alinha verticalmente o conteúdo */
-    justify-content: center; /* Alinha horizontalmente o conteúdo */
-    font-size: 21px; /* Defina o tamanho da fonte desejado */
-    padding: 5px; /* Adiciona espaço interno para separar o texto das bordas */
+    font-weight: 500;
+    margin-bottom: 0px;
+    font-size: 18px; /* Defina o tamanho da fonte desejado */
 }
 
-.divTituloCarrossel2 {
-    margin-left: 50px;
-    margin-top: 280px;
-    margin-bottom: 10px;
-    width: 200px;
+.botao_troque {
+    flex: 1;
     background-color: #EAC222;
-    height: 40px;
-    border-radius: 10px;
-    display: flex; /* Adiciona display flex para alinhar o texto */
-    align-items: center; /* Alinha verticalmente o conteúdo */
-    justify-content: center; /* Alinha horizontalmente o conteúdo */
-    font-size: 21px; /* Defina o tamanho da fonte desejado */
-    padding: 5px; /* Adiciona espaço interno para separar o texto das bordas */
+    color: #000000;
+    border: none;
+    padding: 15px;
+    width: 200px; /* Match the input fields width */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 90px;
 }
+
+.divtituloCarrossel{
+    flex: 1;
+    background-color: #B9B6B6;
+    color: #000000;
+    border: none;
+    padding: 15px;
+    width: 200px; /* Match the input fields width */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 50px;
+  }
+
+  .tituloCarrossel {
+    flex: 1;
+    background-color: #B9B6B6;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
 
 .divbotaoCarrossel1{
     margin-left: 50px;
@@ -307,8 +318,121 @@ nav ul li a {
 .bot{
     display: flex;
     justify-content: center;
-
 }
   /* .login-btn:hover { 
     background: #ffda48;
   } */
+
+  .carrosselContainerAlimenticio {
+    overflow: hidden;
+    padding: 0px 0; /* Adiciona espaço nas laterais */
+    margin: 20px 20px; /* Adiciona espaço acima e abaixo */
+    position: relative;
+}
+
+.carrossel1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carrossel1{
+    display: flex;
+    background-color: #b9b6b6; /* Cor de fundo */
+    border-radius: 15px; /* Adiciona bordas arredondadas */
+    padding: 1px 1px; /* Adiciona espaço interno */
+    overflow-x: auto; /* Habilita scroll horizontal */
+    margin: 10px 10px 20px 20px; /* Remove as margens para evitar ultrapassar a tela */
+    width: 590px; /* Subtrai 40px para levar em conta as margens */
+}
+
+.elementoCarrosselEmpresas1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 7px 7px 3px 3px;
+}
+
+.elementoCarrosselEmpresas1 img{
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto;
+    margin: 10px;
+}
+
+.imagemCarrossel {
+    background-color: #d9d9d9;
+    padding: 5px;
+    width:155px;
+    height: 160px;
+    border-radius: 10px;
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    justify-content: center;
+    display: flex;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute; /* Adiciona posicionamento absoluto */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    z-index: 1;
+}
+
+.prev{
+    left: 0;
+}
+
+.next{
+    right: 0;
+}
+
+.descrição-geral1 {
+    display: none;
+    text-align: center;
+    margin-top: 20px; /* Adiciona espaço entre o carrossel e a descrição geral */
+}
+
+.descrição {
+    display: none;
+}
+
+.tituloPagina {
+    margin-left: 40px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 45px;
+}
+
+.tituloCarrossel {
+    margin-left: 20px;
+}
+
+.divTituloCarrossel {
+    margin-left: 20px;
+    width: 200px;
+    background-color: #EAC222;
+    height: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    display: flex; /* Adiciona display flex para alinhar o texto */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    /*justify-content: center; /* Alinha horizontalmente o conteúdo */
+    font-size: 25px; /* Defina o tamanho da fonte desejado */
+    padding: 5px; /* Adiciona espaço interno para separar o texto das bordas */
+}
+
+.tituloONG {
+    width: 155px;
+    background-color: #d9d9d9;
+    padding: 5px 5px;
+    margin: 10px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
