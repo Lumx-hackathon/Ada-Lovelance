@@ -66,20 +66,25 @@ ul li a {
 }
 
   .container {
-    background-color: #fff;
+    background-color: #EDEDED;
     padding: 20px;
     text-align: center;
   }
   
   .title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-family: "Inter", sans-serif;
+    font-weight: 1100px;
+    font-size: 55px;
+    color: #000000;
+    margin-bottom: 70px;
+    margin-top: 60px;
   }
   
   .highlight {
-    background-color: yellow;
-    padding: 0 5px;
+    color: #303030;
+    background-color: #EAC222;
+    padding: 10px 50px;
+    border-radius: 10px;
   }
   
   .normal {
@@ -87,11 +92,18 @@ ul li a {
   }
   
   .description {
-    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400px;
+    font-size: 25px;
+    color: #000000;
+    margin-bottom: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 10px;
   }
   
   .gray-container {
-    background-color: #ccc;
+    background-color: #B9B6B6;
     padding: 20px;
     display: flex;
     justify-content: space-around;
@@ -99,9 +111,10 @@ ul li a {
   
   .gray-box {
     width: calc(33.33% - 20px);
-    background-color: #f2f2f2;
     padding: 20px;
     margin-right: 20px;
+    align-items: center;
+    padding: 40px;
   }
   
   .gray-box:last-child {
@@ -109,16 +122,27 @@ ul li a {
   }
   
   .gray-box h2 {
-    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: #000000;
     margin-bottom: 10px;
+    text-align: center;
   }
   
   .gray-box p {
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
     font-size: 14px;
+    color: #000000;
     margin-bottom: 10px;
   }
   
   .gray-box input[type="text"] {
+    font-family: "Inter", sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #000000;
     width: 100%;
     padding: 5px;
     margin-bottom: 10px;
