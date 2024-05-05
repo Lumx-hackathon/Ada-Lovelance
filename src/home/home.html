@@ -13,11 +13,11 @@
                 <img src="/assets/perfil/Ada_Branco.png" alt="Logo">
             </div>
             <ul>
-                <li class="home"><a href="#" class="home-a">Home</a></li>
-                <li><a href="#">Doação</a></li>
-                <li><a href="#">Créditos</a></li>
-                <li><a href="#">Empresa</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li class="home"><a href="../home/home.html" class="home-a">Home</a></li>
+                <li><a href="../doação/doacao.html">Doação</a></li>
+                <li><a href="">Créditos</a></li>
+                <li><a href="../empresas/empresas.html">Empresa</a></li>
+                <li><a href="../SaibaMais/SaibaMais.html">FAQ</a></li>
             </ul>
             <div class="profile">
                 <img src="/assets/perfil/perfil (1) 1.png" alt="Perfil">
@@ -33,7 +33,7 @@
             <div class="texto-inicial">
                 <p>Junte-se a nós nesse compromisso. <br>
                     Aqui você pode doar para uma ONG,  fortaleçer sua empresa, encantar seus clientes e transformar vidas!</p>
-                        <button>Começar já</button>
+                        <button onclick="comecar()" class="comecar-btn">Começar já</button>
             </div>
         </div>
         <div class="doar">
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <div class="botao-bloco">
-                        <button>Cadastre-se agora</button>
+                        <button onclick="cadastroempresa()" class="cadempresa-btn">Cadastre-se agora</button>
                     </div>
                 </div>
                 <div class="bloco">
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                     <div class="botao-bloco">
-                        <button>Cadastre-se agora</button>
+                        <button onclick="cadastroong()" class="cadong-btn">Cadastre-se agora</button>
                     </div>
                 </div>
                 <div class="bloco">
@@ -86,7 +86,7 @@
                         </div>
                     </div>
                     <div class="botao-bloco">
-                        <button>Crie uma conta</button>
+                        <button onclick="cadastro_usuarios()" class="cadpessoa-btn">Crie uma conta</button>
                     </div>
                 </div>
             </div>
@@ -187,7 +187,26 @@
             </div>
         </div>
     </footer>
-    
+<script>
+function comecar() {
+window.location.href = "../login/login.html";
+}
+
+function cadastroempresa() {
+window.location.href = "../cadastro_empresa/cadastro_empresa.html";
+}
+
+function cadastroong() {
+window.location.href = "../cadastro_ong/cadastro_ong.html";
+}
+
+function cadastro_usuarios() {
+window.location.href = "../cadastro_usuario/cadastro_usuario.html";
+}
+
+</script>
+
+
     <!-- <footer>
         <p>&copy; 2024 Minha Empresa. Todos os direitos reservados.</p>
     </footer> -->

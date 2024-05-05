@@ -12,25 +12,24 @@
         <header>
             <nav>
                 <div class="logo">
-                    <img src="logo.png" alt="Logo">
+                    <img src="/assets/perfil/Ada_Branco.png" alt="Logo">
                 </div>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Doação</a></li>
-                    <li><a href="#">Créditos</a></li>
-                    <li><a href="#">Empresa</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="../home/home.html" >Home</a></li>
+                    <li class="home"><a href="../doação/doacao.html" class="home-a">Doação</a></li>
+                    <li><a href="">Créditos</a></li>
+                    <li><a href="../empresas/empresas.html">Empresa</a></li>
+                    <li><a href="../SaibaMais/SaibaMais.html">FAQ</a></li>
                 </ul>
                 <div class="profile">
-                    <img src="profile.png" alt="Perfil">
+                    <img src="/assets/perfil/perfil (1) 1.png" alt="Perfil">
                 </div>
             </nav>
         </header>
-
         <section>
 
         <div class="tituloPagina">
-            <h1>Conheça as ONGs ativas!</h1>
+            <h1>Conheça as ONGs ativas e <br> selecione para qual deseja doar!</h1>
         </div>
 
         <div>
@@ -47,7 +46,7 @@
 
                         <div class="elementoCarrosselDoacao1">
                             <div class="imagemCarrossel"><img src="../../assets/doacao/image2.png"></div>
-                            <div class="tituloONG">Instituto Lixo Zero Brasil</div>
+                            <div onclick="lixozerobtn()" class="tituloONG">Instituto Lixo Zero Brasil</div>
                             <div class="descrição">A Instituto Lixo Zero Brasil é uma ONG piriri pororó.</div>
                         </div>
 
@@ -145,6 +144,13 @@
         <footer>
 
         </footer>
+
+        <script>
+                function lixozerobtn() {
+                window.location.href = "../transacao/transacao.html";
+                }
+            </script>
+
 
         <script src="doacao.js"></script>
     </body>
