@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* aba de navegação */
+header {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 100px; /* Ajuste conforme necessário */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+} 
+
+.profile img {
+    width: 30px; /* Ajuste conforme necessário */
+    border-radius: 50%; /* Para criar uma imagem circular */
+}
+
+html, body {
+    overflow-x: hidden;
+    background-color: #d9d9d9;
+}
+
+.carrosselContainerAlimenticio, .carrosselContainerEducacional, .carrosselContainerFinanças {
+    overflow: hidden;
+    padding: 20px 0; /* Adiciona espaço nas laterais */
+    margin: 20px 20px; /* Adiciona espaço acima e abaixo */
+    position: relative;
+}
+
+.carrossel1 img,
+.carrossel2 img,
+.carrossel3 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carrossel1, .carrossel2, .carrossel3 {
+    display: flex;
+    background-color: #b9b6b6; /* Cor de fundo */
+    border-radius: 15px; /* Adiciona bordas arredondadas */
+    padding: 10px 10px; /* Adiciona espaço interno */
+    overflow-x: auto; /* Habilita scroll horizontal */
+    margin: 10px 10px 20px 20px; /* Remove as margens para evitar ultrapassar a tela */
+    width: calc(100% - 40px); /* Subtrai 40px para levar em conta as margens */
+}
+
+.elementoCarrosselEmpresas1,
+.elementoCarrosselEmpresas2,
+.elementoCarrosselEmpresas3 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 10px 5px 5px;
+}
+
+.elementoCarrosselEmpresas1 img,
+.elementoCarrosselEmpresas2 img,
+.elementoCarrosselEmpresas3 img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto;
+    margin: 10px;
+}
+
+.imagemCarrossel {
+    background-color: #d9d9d9;
+    padding: 5px;
+    width:230px;
+    height: 200px;
+    border-radius: 10px;
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    justify-content: center;
+    display: flex;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute; /* Adiciona posicionamento absoluto */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    z-index: 1;
+}
+
+.prev{
+    left: 0;
+}
+
+.next{
+    right: 0;
+}
+
+.descrição-geral1,
+.descrição-geral2,
+.descrição-geral3 {
+    display: none;
+    text-align: center;
+    margin-top: 20px; /* Adiciona espaço entre o carrossel e a descrição geral */
+}
+
+.descrição {
+    display: none;
+}
+
+.tituloPagina {
+    margin-left: 40px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 45px;
+}
+
+.tituloCarrossel {
+    margin-left: 20px;
+}
+
+.divTituloCarrossel {
+    margin-left: 20px;
+    width: 200px;
+    background-color: #EAC222;
+    height: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    display: flex; /* Adiciona display flex para alinhar o texto */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    /*justify-content: center; /* Alinha horizontalmente o conteúdo */
+    font-size: 25px; /* Defina o tamanho da fonte desejado */
+    padding: 5px; /* Adiciona espaço interno para separar o texto das bordas */
+}
+
+.tituloONG {
+    width: 230px;
+    background-color: #d9d9d9;
+    padding: 5px 5px;
+    margin: 10px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
