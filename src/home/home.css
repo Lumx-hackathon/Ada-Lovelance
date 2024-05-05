@@ -359,7 +359,7 @@ footer {
 }
 
 .quatro-palavras a,
-.cinco-telefones a {
+.cinco-telefones a, .cinco-githubs a {
     display: block;
     color: #000000;
     padding: 8px;

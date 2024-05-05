@@ -209,6 +209,7 @@ ul li a {
     transform: translate(53.8%, 10%); /* Corrige o deslocamento para o centro */
 }
 
+/* Estilos para o rodapé */
 footer {
     background-color: #D9D9D9;
     color: #000000;
@@ -247,7 +248,7 @@ footer {
 }
 
 .quatro-palavras a,
-.cinco-telefones a {
+.cinco-telefones a, .cinco-githubs a {
     display: block;
     color: #000000;
     padding: 8px;
