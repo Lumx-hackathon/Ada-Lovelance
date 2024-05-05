@@ -245,3 +245,46 @@ section {
     width: 200px; /* Definindo um tamanho fixo para os botões */
     text-align: center; /* Centralizando o texto */
 }
+
+.tres-containers {
+    display: flex;
+    margin-top: 100px;
+} 
+
+.container-chumbo {
+        flex: 1;
+        padding: 20px;
+        margin-right: 20px; /* Espaçamento entre os blocos */
+        margin-left: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column; /* Alinha os itens verticalmente */
+    background-color: #303030;
+}
+
+.imagem-container {
+    align-items: center;
+    padding: 1px; /* Adiciona um espaçamento interno */
+}
+
+.texto-container h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+}
+
+.texto-container p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #898CA9;
+    text-align: center;
+}
+
+.verde p{
+    color: #4CAD50; /* Cor verde */
+    font-weight: 600;
+    text-align: center;
+}
