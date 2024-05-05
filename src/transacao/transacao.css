@@ -149,12 +149,18 @@ ul li a {
   }
   
   .gray-box button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
     border: none;
+    background-color: #EAC222;
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 7px;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px; /* Aumenta o espaço entre o botão e a caixa */
+    margin-right: 30px; /* Mantém a mesma margem do botão para a esquerda */
   }
   
   .gray-box img {
