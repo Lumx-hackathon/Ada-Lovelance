@@ -1,26 +1,47 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
 }
+
 header {
     background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+    padding: 10px 20px;
 }
+
 nav {
-    background-color: #444;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.logo img {
+    width: 100px; /* Ajuste conforme necessário */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
 nav a {
-    color: #fff;
     text-decoration: none;
-    margin: 0 10px;
-} 
+    color: #fff;
+}
+
+.profile img {
+    width: 30px; /* Ajuste conforme necessário */
+    border-radius: 50%; /* Para criar uma imagem circular */
+}
 section {
     /* padding: 20px; */
     text-align: center;
@@ -36,19 +57,26 @@ section {
 } */
 
 /* Estilos para a div conteudo */
-.conteudo {
+.herosection {
     background-color: #d9d9d9;
     padding: 20px;
-    /* margin-top: 20px; */
+    padding-bottom: 70px;
 }
 
 /* Estilos para a div imagem */
-.imagem {
+.imagem-logo {
     text-align: center;
 }
 
+/* Estilos para o título abaixo da imagem */
+.imagem-logo h2 {
+    font-family: "Myanmar Khyay", sans-serif;
+    font-size: 56px;
+    margin-top: 10px;
+}
+
 /* Estilos para a div texto */
-.texto {
+.texto-inicial {
     background-color: #E2E2E2;
     padding: 10px 30px; /* Reduz o espaçamento interno vertical */
     margin-top: 10px; /* Reduz o espaçamento entre o texto e a caixa */
@@ -60,7 +88,7 @@ section {
     overflow: hidden;
 }
 
-.texto p {
+.texto-inicial p {
     font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 28px;
@@ -68,8 +96,7 @@ section {
     margin-left: 30px; /* Mantém a mesma margem do texto para a esquerda */
 }
 
-
-.texto button {
+.texto-inicial button {
     font-family: "Inter", sans-serif;
     font-weight: 600;
     border: none;
@@ -77,18 +104,144 @@ section {
     color: #000000;
     padding: 10px 20px;
     font-size: 14px;
-    border-radius: 10px;
+    border-radius: 7px;
     cursor: pointer;
     margin-bottom: 30px; /* Aumenta o espaço entre o botão e a caixa */
     margin-left: 30px; /* Mantém a mesma margem do botão para a esquerda */
 }
 
+.doar {
+    background-color: #ededed; /* Fundo branco */
+    padding: 20px;
+    padding-top: 70px;
+    display: flex;
+}
 
+.doar .imagem-favo {
+    flex: 1; /* Ocupa metade do espaço disponível */
+    text-align: center;
+}
 
+.doar .imagem-favo img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+}
 
-/* Estilos para o título abaixo da imagem */
-.imagem h2 {
-    font-family: "Myanmar Khyay", sans-serif;
-    font-size: 56px;
+.doar .texto-doe {
+    background-color: #E2E2E2;
+    padding: 10px 30px; /* Reduz o espaçamento interno vertical */
+    margin-top: 0px; /* Reduz o espaçamento entre o texto e a caixa */
+    border-radius: 15px;
+    text-align: right;
+    margin-left: 30px;
+    margin-right: 30px;
+    flex: 1; 
+}
+
+.doar .texto-doe p {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin-right: 30px; /* Mantém a mesma margem do texto para a esquerda */
+    margin-top: 55px;
+}
+
+.doar .texto-doe button {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    border: none;
+    background-color: #EAC222;
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 7px;
+    cursor: pointer;
     margin-top: 10px;
+    margin-bottom: 30px; /* Aumenta o espaço entre o botão e a caixa */
+    margin-right: 30px; /* Mantém a mesma margem do botão para a esquerda */
+}
+
+.beneficios {
+    background-color: #ededed;
+    padding: 20px;
+}
+
+.beneficios h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 54px;
+    margin-bottom: 10px;
+}
+
+.beneficios p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #898CA9;
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+.tres-blocos {
+    display: flex;
+}
+
+.bloco {
+    flex: 1;
+    padding: 20px;
+    margin-right: 5px; /* Espaçamento entre os blocos */
+    margin-left: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+}
+
+.conteudo {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.imagem-bloco {
+    flex: 1; /* Ocupa metade do espaço */
+    text-align: center;
+    background-color: #B9B6B6; /* Cor de fundo diferente */
+    padding: 1px; /* Adiciona um espaçamento interno */
+    border-radius: 9px;
+}
+
+.imagem-bloco img {
+    max-width: 100%;
+}
+
+.texto-bloco {
+    flex: 5; /* Ocupa metade do espaço */
+    padding-left: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.texto-bloco p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #898CA9;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.botao-bloco {
+    text-align: center; /* Centraliza o botão */
+    margin-top: auto; /* Empurra o botão para a parte inferior */
+}
+
+.botao-bloco button {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    border: none;
+    background-color: #B9B6B6;
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 200px; /* Definindo um tamanho fixo para os botões */
+    text-align: center; /* Centralizando o texto */
 }
