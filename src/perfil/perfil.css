@@ -1,0 +1,307 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 60px; /* Ajuste conforme necessário */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.profile img {
+    width: 40px; /* Ajuste conforme necessário */
+    border-radius: 50%; /* Para criar uma imagem circular */
+}
+
+/* Adicionando espaçamento entre as palavras nos links */
+nav ul li a {
+    padding: 0 50px; /* Adicionando padding para criar espaço entre as palavras */
+}
+
+.main-content {
+    display: flex;
+    height: calc(100vh - 50px); /* Ajusta a altura da tela, descontando a altura do cabeçalho */
+}
+
+
+.split-container {
+    display: flex;
+    height: 100%; /* Define a altura da tela inteira */
+}
+
+.split-left {
+    flex: 1; /* A primeira parte ocupará 50% da largura */
+    background-color: #D9D9D9; /* Cor de fundo da parte esquerda */
+}
+
+.split-right {
+    flex: 1; /* A segunda parte ocupará 50% da largura */
+    background-color: #EDEDED; /* Cor de fundo da parte direita */
+}
+
+  
+  .login-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+  }
+
+  .login-form p{
+    margin-left: -600px;
+  }
+
+  .login-form h1{
+    margin-left: 290px;
+    margin-bottom: 70px;
+  }
+
+  .login-form input[type="text"] {
+    margin-bottom: 19px; /* Ajusta a margem inferior para afastar o campo de e-mail */
+    background-color: #B9B6B6;
+  }
+  
+  .login-form input[type="password"] {
+    margin-bottom: 19px; /* Ajusta a margem superior para afastar o campo de senha */
+    background-color: #B9B6B6;
+  }  
+
+  .botoes{
+    margin-top: 60px;
+    display:flex;
+  }
+  
+   .botao_salvar{
+    flex: 1;
+    margin-left: 40px;
+    background-color: #EAC222;
+    color: #000000;
+    border: none;
+    padding: 15px;
+    width: 250px; /* Match the input fields width */
+     border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+  } 
+
+  .login-btn1 {
+    flex: 1;
+    background-color: #B9B6B6;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+
+  .login-btn2 {
+    flex: 1;
+    background-color: #EAC222;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+
+  .botao_editar{
+    flex: 1;
+    margin-right: 40px;
+    background-color: #B9B6B6;
+    color: #000000;
+    border: none;
+    padding: 15px;
+    width: 250px; /* Match the input fields width */
+     border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 670px; /* Adjusted width */
+    padding: 15px;
+    margin-bottom: 16px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .tituloCarrossel {
+    margin-left: 20px;
+}
+
+.endereco_carteira{
+    margin-right: -100px;
+    margin-top: 20px;
+}
+
+.address {
+    margin-right: -200px;
+    color: #797979;
+}
+
+.renata img {
+    margin-top: -90px;
+    margin-right: 280px;
+}
+
+.renataNome{
+    margin-top: -65px;
+    margin-right: 145px;
+}
+
+.linha-preta {
+    width: 90%; /* Largura total da linha */
+    height: 2px; /* largura da linha */
+    background-color: #000; /* Cor preta */
+    margin-top: -50px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    width: 280px;
+}
+
+.tituloCarrossel {
+    margin-left: 10px;
+    margin-top: 35px;
+}
+
+.tituloCarrossel2 {
+    margin-left: 10px;
+    margin-top: 35px;
+}
+
+.divTituloCarrossel {
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: 200px;
+    width: 200px;
+    background-color: #EAC222;
+    height: 40px;
+    border-radius: 10px;
+    display: flex; /* Adiciona display flex para alinhar o texto */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    justify-content: center; /* Alinha horizontalmente o conteúdo */
+    font-size: 21px; /* Defina o tamanho da fonte desejado */
+    padding: 5px; /* Adiciona espaço interno para separar o texto das bordas */
+}
+
+.divTituloCarrossel2 {
+    margin-left: 50px;
+    margin-top: 280px;
+    margin-bottom: 10px;
+    width: 200px;
+    background-color: #EAC222;
+    height: 40px;
+    border-radius: 10px;
+    display: flex; /* Adiciona display flex para alinhar o texto */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    justify-content: center; /* Alinha horizontalmente o conteúdo */
+    font-size: 21px; /* Defina o tamanho da fonte desejado */
+    padding: 5px; /* Adiciona espaço interno para separar o texto das bordas */
+}
+
+.divbotaoCarrossel1{
+    margin-left: 50px;
+    margin-top: 180px;
+    margin-bottom: 200px;
+    width: 130px;
+    background-color: #EAC222;
+    height: 20px;
+    border-radius: 10px;
+    display: flex; /* Adiciona display flex para alinhar o texto */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    justify-content: center; /* Alinha horizontalmente o conteúdo */
+    font-size: 15px; /* Defina o tamanho da fonte desejado */
+    padding: 5px; /* Adiciona espaço interno para separar o texto das bo */
+}
+.divbotaoCarrossel2{
+    margin-left: 50px;
+    margin-top: 180px;
+    margin-bottom: 18px;
+    width: 130px;
+    background-color: #EAC222;
+    height: 20px;
+    border-radius: 10px;
+    display: flex; /* Adiciona display flex para alinhar o texto */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    justify-content: center; /* Alinha horizontalmente o conteúdo */
+    font-size: 15px; /* Defina o tamanho da fonte desejado */
+    padding: 5px; /* Adiciona espaço interno para separar o texto das bo */
+}
+
+.divbotaoCarrossel3{
+    margin-left: 50px;
+    margin-top: 180px;
+    margin-bottom: 200px;
+    width: 130px;
+    background-color: #EAC222;
+    height: 20px;
+    border-radius: 10px;
+    display: flex; /* Adiciona display flex para alinhar o texto */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    justify-content: center; /* Alinha horizontalmente o conteúdo */
+    font-size: 15px; /* Defina o tamanho da fonte desejado */
+    padding: 5px; /* Adiciona espaço interno para separar o texto das bo */
+}
+
+.divbotaoCarrossel4{
+    margin-left: 50px;
+    margin-top: 180px;
+    margin-bottom: 200px;
+    width: 130px;
+    background-color: #EAC222;
+    height: 20px;
+    border-radius: 10px;
+    display: flex; /* Adiciona display flex para alinhar o texto */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    justify-content: center; /* Alinha horizontalmente o conteúdo */
+    font-size: 15px; /* Defina o tamanho da fonte desejado */
+    padding: 5px; /* Adiciona espaço interno para separar o texto das bo */
+}
+
+.bot{
+    display: flex;
+    justify-content: center;
+
+}
+  /* .login-btn:hover { 
+    background: #ffda48;
+  } */
