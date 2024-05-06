@@ -35,20 +35,20 @@
     <div class="gray-box">
       <h2>Escolha sua quantia</h2>
       <p>Valor</p>
-      <input type="text" placeholder="Digite um número">
+      <input type="text" id="quantia" placeholder="Digite um número">
       <p class="number-text">Selecione uma quantia</p>
       <img src="https://via.placeholder.com/150" alt="Imagem" class="number-image">
     </div>
     <div class="gray-box">
       <h2>Confirme</h2>
       <p>ONG</p>
-      <input type="text" placeholder="Nome da ONG">
+      <input type="text" id="nome_ong" placeholder="Nome da ONG">
       <p>Valor</p>
-      <input type="text" placeholder="Valor">
+      <input type="text" id="valor" placeholder="Valor">
     </div>
     <div class="gray-box">
       <h2>Envie</h2>
-      <button>Enviar</button>
+      <button id="enviar" onclick="doar()" disabled>Enviar</button>
       <p>Após o envio, você receberá uma confirmação com seu token e a loja em que poderá usá-lo.</p>
     </div>
   </div>
@@ -105,9 +105,30 @@
     </div>
 </footer>
 <script>
+    // Função para verificar se todos os campos estão preenchidos
+    function verificarPreenchimento() {
+        var quantia = document.getElementById("quantia").value;
+        var nomeOng = document.getElementById("nome_ong").value;
+        var valor = document.getElementById("valor").value;
+
+        // Habilita o botão de envio se todos os campos estiverem preenchidos
+        if (quantia !== "" && nomeOng !== "" && valor !== "") {
+            document.getElementById("enviar").disabled = false;
+        } else {
+            document.getElementById("enviar").disabled = true;
+        }
+    }
+
+    // Adiciona um evento de escuta para cada campo de entrada
+    document.getElementById("quantia").addEventListener("input", verificarPreenchimento);
+    document.getElementById("nome_ong").addEventListener("input", verificarPreenchimento);
+    document.getElementById("valor").addEventListener("input", verificarPreenchimento);
+
     function voltar() {
     window.location.href = "../doação/doacao.html";
     }
-    </script>
-</body>
-</html>
+
+    function doar() {
+    window.location.href = "../creditos/creditos.html";
+    }
+</script>
