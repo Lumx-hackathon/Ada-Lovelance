@@ -61,9 +61,21 @@
                 <div class="gray-box">
                     <p>3. Esse cupom será transformado em um NFT para ser trocado direto com a marca </p>
                 </div>
-                <div class="yellow-box">
+                <div class="yellow-box" onclick="openPopup()">
                     <p>Resgatar já!</p>
                 </div>
+
+                      <!-- Pop-up -->
+    <!-- Pop-up de troca de tokens por NFTs -->
+    <div class="modal" id="exchangeModal" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; border: 1px solid black;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Trocar Tokens por NFTs</h2>
+            <input type="number" id="tokenAmount" placeholder="Quantidade de Tokens">
+            <button id="confirmExchange" onclick="trocaNFT()">Confirmar Troca</button>
+        </div>
+    </div>
+
             </div>
             <div class="column">
                 <h2>Cenário 2</h2>
@@ -154,6 +166,22 @@
             </div>
         </div>
     </footer>
+
+    <script src="../../back-end/api.js"></script>
+    <script>
+    function openPopup() {
+    document.getElementById('exchangeModal').style.display = 'block';
+}
+    function voltar() {
+    window.location.href = "../doação/creditos.html";
+    }
+
+    document.getElementById('confirmExchange').addEventListener('click', function() {
+    // Chamar a função para fazer o mint de tokens
+    // Exibir um alerta quando o botão for clicado
+    alert('Você acabou de receber um Néctar!.');
+});
+    </script>
 </body>
 </html>
  
