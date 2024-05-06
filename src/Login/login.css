@@ -92,4 +92,21 @@ body, html {
   .login-btn:hover {
     background: #ffda48;
   }
+
+  #openPopupBtn {
+    background: #EAC222;
+    color: #000000;
+    border: none;
+    padding: 15px;
+    width: 250px; /* Match the input fields width */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  #openPopupBtn:hover {
+    background: #ffda48;
+  }
+  
   
